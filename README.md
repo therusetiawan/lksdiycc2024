@@ -51,6 +51,13 @@ AWS_BUCKET=
 AWS_USE_PATH_STYLE_ENDPOINT=false
 ```
 
+### Set Redis ElastiCache on .env (fill your AWS ElasticCache config):
+```bash
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+```
+
 <!-- ### Set SQS on .env (fill your AWS SQS config):
 ```bash
 QUEUE_DRIVER=sqs
