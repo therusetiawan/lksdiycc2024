@@ -14,13 +14,10 @@ Repository ini merupakan aplikasi berbasis web yang digunakan untuk seleksi LKS 
 ## Requirements
  - [v8.1+](https://www.php.net/)
  - [Composer v2](https://yarnpkg.com/en/docs/install)
- - Stable version of [Docker](https://docs.docker.com/engine/install/)
- - Compatible version of [Docker Compose](https://docs.docker.com/compose/install/#install-compose)
-
 ## Getting started
 ### Clone the repo:
 ```bash
-git clone --depth 1 https://github.com/denikn/lksdiycc2024
+git clone --depth 1 https://github.com/therusetiawan/lksdiycc2024
 cd lksdiycc2024
 rm -rf .git
 ```
@@ -79,76 +76,6 @@ php artisan migrate
 ```bash
 php -S localhost:8000 -t public
 ```
-
-## Dockerize
-By default, the scripts required to dockerize this project are `.docker` and `docker-compose.yml`. The script is provided in this repository. Here's how to build and run the docker containers.
-### For first time only !
-- `git clone https://github.com/denikn/lksdiycc2024`
-- `cd lksdiycc2024`
-- `docker compose up -d --build`
-- `docker compose exec php bash`
-- `composer setup`
-
-### From the second time onwards
-- `docker compose up -d`
-
-### Laravel App
-- URL: http://localhost
-
-### Basic docker compose commands
-- Build or rebuild services
-    - `docker compose build`
-- Create and start containers
-    - `docker compose up -d`
-- Stop and remove containers, networks
-    - `docker compose down`
-- Stop all services
-    - `docker compose stop`
-- Restart service containers
-    - `docker compose restart`
-- Run a command inside a container
-    - `docker compose exec [container] [command]`
-
-### Useful Laravel Commands
-- Display basic information about your application
-    - `php artisan about`
-- Remove the configuration cache file
-    - `php artisan config:clear`
-- Flush the application cache
-    - `php artisan cache:clear`
-- Clear all cached events and listeners
-    - `php artisan event:clear`
-- Delete all of the jobs from the specified queue
-    - `php artisan queue:clear`
-- Remove the route cache file
-    - `php artisan route:clear`
-- Clear all compiled view files
-    - `php artisan view:clear`
-- Remove the compiled class file
-    - `php artisan clear-compiled`
-- Remove the cached bootstrap files
-    - `php artisan optimize:clear`
-- Delete the cached mutex files created by scheduler
-    - `php artisan schedule:clear-cache`
-- Flush expired password reset tokens
-    - `php artisan auth:clear-resets`
-
-### Laravel Pint (Code Style Fixer | PHP-CS-Fixer)
-- Format all files
-    - `vendor/bin/pint`
-- Format specific files or directories
-    - `vendor/bin/pint app/Models`
-    - `vendor/bin/pint app/Models/User.php`
-- Format all files with preview
-    - `vendor/bin/pint -v`
-- Format uncommitted changes according to Git
-    - `vendor/bin/pint --dirty`
-- Inspect all files
-  - `vendor/bin/pint --test`
- 
-## Notes
-Feel free to edit and adjust this docker configuration to fit with your server environment. Special thanks to https://github.com/refactorian/laravel-docker for good docker setup inspiration.
-
 
 ## License and Copyright
 
