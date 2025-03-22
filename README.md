@@ -29,7 +29,7 @@ cp .env.example .env
 
 ### Install dependencies:
 ```bash
-composer install
+composer update
 ```
 
 ### Set key:
