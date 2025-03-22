@@ -27,6 +27,11 @@ rm -rf .git
 cp .env.example .env
 ```
 
+### Install dependencies:
+```bash
+composer install
+```
+
 ### Set key:
 ```bash
 php artisan key:generate
@@ -56,22 +61,6 @@ AWS_USE_PATH_STYLE_ENDPOINT=false
 REDIS_HOST=127.0.0.1
 REDIS_PASSWORD=null
 REDIS_PORT=6379
-```
-
-<!-- ### Set SQS on .env (fill your AWS SQS config):
-```bash
-QUEUE_DRIVER=sqs
-QUEUE_CONNECTION=sqs
-SQS_KEY=<aws_access_key_id>
-SQS_SECRET=<aws_secret_access_key>
-SQS_QUEUE=<queue name>
-SQS_REGION=ap-southeast-2
-SQS_PREFIX=https://sqs.ap-southeast-2.amazonaws.com/<aws_account_id>
-``` -->
-
-### Install dependencies:
-```bash
-composer install
 ```
 
 ### Database migration and seed:
